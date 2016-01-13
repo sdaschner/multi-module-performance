@@ -1,0 +1,5 @@
+= Maven multiple module performance tests
+This project is used to demonstrate the overhead of Maven multiple modules.
+
+Simply run `mvn clean install` in `flat`, `hierarchical` and `multi-hierarchical`.
+The last two structures are created first by executing `create.sh`.
