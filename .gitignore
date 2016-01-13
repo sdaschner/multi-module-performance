@@ -8,3 +8,8 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+
+hierarchical/pom.xml
+hierarchical/hierarchical-*
+multi-hierarchical/pom.xml
+multi-hierarchical/multi-hierarchical-*
