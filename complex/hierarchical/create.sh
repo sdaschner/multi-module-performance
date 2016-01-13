@@ -2,6 +2,8 @@
 
 data=(a b c d e f g h i j k l m n o p q r s t u v w x y z)
 
+mkdir -p hierarchical-web-ui/src/main/java/com/sebastian_daschner/maven_test/
+
 for val in ${data[@]}; do
     upperVal=${val^^}
 
@@ -308,4 +310,16 @@ tee -a pom.xml << EOF
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 </project>
+EOF
+
+tee -a hierarchical-web-ui/src/main/java/com/sebastian_daschner/maven_test/JAXRSConfiguration.java << EOF
+package com.sebastian_daschner.maven_test;
+
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
+
+@ApplicationPath("resources")
+public class JAXRSConfiguration extends Application {
+    // nothing to configure
+}
 EOF
